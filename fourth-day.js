@@ -1,6 +1,5 @@
 let numeroEscolhido = Math.floor((Math.random() * 10) +1);
 let numeroChutado;
-console.log(numeroEscolhido);
 
 function advinhaNumero() {
     numeroChutado = prompt("Que número eu estou escondendo?");
