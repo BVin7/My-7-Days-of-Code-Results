@@ -65,6 +65,7 @@ function removerDaLista() {
         case "Frutas":
             procuraItem = frutas.includes(nomeDoItem);
             if (procuraItem === true) {
+                procuraItem = frutas.indexOf(nomeDoItem);
                 removeItem = frutas.splice(procuraItem, 1);
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
@@ -73,6 +74,7 @@ function removerDaLista() {
         case "Legumes":
             procuraItem = legumes.includes(nomeDoItem);
             if (procuraItem === true) {
+                procuraItem = legumes.indexOf(nomeDoItem);
                 removeItem = legumes.splice(procuraItem, 1);
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
@@ -81,6 +83,7 @@ function removerDaLista() {
         case "Grãos":
             procuraItem = graos.includes(nomeDoItem);
             if (procuraItem === true) {
+                procuraItem = graos.indexOf(nomeDoItem);
                 removeItem = graos.splice(procuraItem, 1);
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
@@ -89,6 +92,7 @@ function removerDaLista() {
         case "Bebidas":
             procuraItem = bebidas.includes(nomeDoItem);
             if (procuraItem === true) {
+                procuraItem = bebidas.indexOf(nomeDoItem);
                 removeItem = bebidas.splice(procuraItem, 1);
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
@@ -97,6 +101,7 @@ function removerDaLista() {
         case "Frios":
             procuraItem = frios.includes(nomeDoItem);
             if (procuraItem === true) {
+                procuraItem = frios.indexOf(nomeDoItem);
                 removeItem = frios.splice(procuraItem, 1);
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
@@ -105,6 +110,7 @@ function removerDaLista() {
         case "Higiene":
             procuraItem = higiene.includes(nomeDoItem);
             if (procuraItem === true) {
+                procuraItem = higiene.indexOf(nomeDoItem);
                 removeItem = higiene.splice(procuraItem, 1);
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
@@ -113,6 +119,7 @@ function removerDaLista() {
         case "Limpeza":
             procuraItem = limpeza.includes(nomeDoItem);
             if (procuraItem === true) {
+                procuraItem = limpeza.indexOf(nomeDoItem);
                 removeItem = limpeza.splice(procuraItem, 1);
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
