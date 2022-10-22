@@ -77,7 +77,6 @@ function removerDaLista() {
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
             }
-            removeItem = legumes.splice(procuraItem, 1);
             break;
         case "Grãos":
             procuraItem = graos.includes(nomeDoItem);
@@ -86,7 +85,6 @@ function removerDaLista() {
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
             }
-            removeItem = graos.splice(procuraItem, 1);
             break;
         case "Bebidas":
             procuraItem = bebidas.includes(nomeDoItem);
@@ -95,7 +93,6 @@ function removerDaLista() {
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
             }
-            removeItem = bebidas.splice(procuraItem, 1);
             break;
         case "Frios":
             procuraItem = frios.includes(nomeDoItem);
@@ -104,7 +101,6 @@ function removerDaLista() {
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
             }
-            removeItem = frios.splice(procuraItem, 1);
             break;
         case "Higiene":
             procuraItem = higiene.includes(nomeDoItem);
@@ -113,7 +109,6 @@ function removerDaLista() {
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
             }
-            removeItem = higiene.splice(procuraItem, 1);
             break;
         case "Limpeza":
             procuraItem = limpeza.includes(nomeDoItem);
@@ -122,7 +117,6 @@ function removerDaLista() {
             } else {
                 alert("Não foi possível encontrar o item dentro da lista!");
             }
-            removeItem = limpeza.splice(procuraItem, 1);
     }
     mostrarLista();
     gerenciaItens();
