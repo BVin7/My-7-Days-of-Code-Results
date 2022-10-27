@@ -27,23 +27,35 @@ function limparAnterior() {
 function igual() {
     if(operacaoAtual.innerText == 'Adição:') {
         armazenadorDois += tela.innerText;
-        console.log(armazenadorDois);
         tela.innerText = '';
         resultado = parseFloat(armazenador) + parseFloat(armazenadorDois);
         tela.innerText += resultado;
         armazenador = '';
         armazenadorDois = '';
-        console.log(resultado);
 
     } else if(operacaoAtual.innerText == 'Subtração:') {
         armazenadorDois += tela.innerText;
-        console.log(armazenadorDois);
         tela.innerText = '';
         resultado = parseFloat(armazenador) - parseFloat(armazenadorDois);
         tela.innerText += resultado;
         armazenador = '';
         armazenadorDois = '';
-        console.log(resultado);
+
+    } else if(operacaoAtual.innerText == 'Multiplicação:') {
+        armazenadorDois += tela.innerText;
+        tela.innerText = '';
+        resultado = parseFloat(armazenador) * parseFloat(armazenadorDois);
+        tela.innerText += resultado;
+        armazenador = '';
+        armazenadorDois = '';
+        
+    } else if(operacaoAtual.innerText == 'Divisão:') {
+        armazenadorDois += tela.innerText;
+        tela.innerText = '';
+        resultado = parseFloat(armazenador) / parseFloat(armazenadorDois);
+        tela.innerText += resultado;
+        armazenador = '';
+        armazenadorDois = '';
     }
 }
 
@@ -52,7 +64,6 @@ function adicao() {
     telaArmazenadores.innerText = ''
     armazenador += tela.innerText;
     telaArmazenadores.innerText += armazenador;
-    console.log(armazenador);
     tela.innerText = '';
 }
 
@@ -61,16 +72,23 @@ function subtracao() {
     telaArmazenadores.innerText = ''
     armazenador += tela.innerText;
     telaArmazenadores.innerText += armazenador;
-    console.log(armazenador);
     tela.innerText = '';
 }
 
 function multiplicacao() {
-    operacaoAtual.innerText = 'Multiplicação';
+    operacaoAtual.innerText = 'Multiplicação:';
+    telaArmazenadores.innerText = ''
+    armazenador += tela.innerText;
+    telaArmazenadores.innerText += armazenador;
+    tela.innerText = '';
 }
 
 function divisao() {
-    operacaoAtual.innerText = 'Divisão';
+    operacaoAtual.innerText = 'Divisão:';
+    telaArmazenadores.innerText = ''
+    armazenador += tela.innerText;
+    telaArmazenadores.innerText += armazenador;
+    tela.innerText = '';
 }
 
 //EVENTO
