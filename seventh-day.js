@@ -1,5 +1,5 @@
 //VARIÁVEIS
-const tela = document.getElementById('tela');
+const tela = document.getElementById('tela__principal');
 const operacaoAtual = document.getElementById('tela__operacao');
 let telaArmazenadores = document.getElementById('tela__armazenadores');
 
@@ -27,6 +27,7 @@ function limparAnterior() {
 function igual() {
     if(operacaoAtual.innerText == 'Adição:') {
         armazenadorDois += tela.innerText;
+        telaArmazenadores.innerText += armazenadorDois;
         tela.innerText = '';
         resultado = parseFloat(armazenador) + parseFloat(armazenadorDois);
         tela.innerText += resultado;
@@ -35,6 +36,7 @@ function igual() {
 
     } else if(operacaoAtual.innerText == 'Subtração:') {
         armazenadorDois += tela.innerText;
+        telaArmazenadores.innerText += armazenadorDois;
         tela.innerText = '';
         resultado = parseFloat(armazenador) - parseFloat(armazenadorDois);
         tela.innerText += resultado;
@@ -43,6 +45,7 @@ function igual() {
 
     } else if(operacaoAtual.innerText == 'Multiplicação:') {
         armazenadorDois += tela.innerText;
+        telaArmazenadores.innerText += armazenadorDois;
         tela.innerText = '';
         resultado = parseFloat(armazenador) * parseFloat(armazenadorDois);
         tela.innerText += resultado;
@@ -51,6 +54,7 @@ function igual() {
         
     } else if(operacaoAtual.innerText == 'Divisão:') {
         armazenadorDois += tela.innerText;
+        telaArmazenadores.innerText += armazenadorDois;
         tela.innerText = '';
         resultado = parseFloat(armazenador) / parseFloat(armazenadorDois);
         tela.innerText += resultado;
@@ -63,7 +67,7 @@ function adicao() {
     operacaoAtual.innerText = 'Adição:';
     telaArmazenadores.innerText = ''
     armazenador += tela.innerText;
-    telaArmazenadores.innerText += armazenador;
+    telaArmazenadores.innerText += armazenador + "+";
     tela.innerText = '';
 }
 
@@ -71,7 +75,7 @@ function subtracao() {
     operacaoAtual.innerText = 'Subtração:';
     telaArmazenadores.innerText = ''
     armazenador += tela.innerText;
-    telaArmazenadores.innerText += armazenador;
+    telaArmazenadores.innerText += armazenador + "-";
     tela.innerText = '';
 }
 
@@ -79,7 +83,7 @@ function multiplicacao() {
     operacaoAtual.innerText = 'Multiplicação:';
     telaArmazenadores.innerText = ''
     armazenador += tela.innerText;
-    telaArmazenadores.innerText += armazenador;
+    telaArmazenadores.innerText += armazenador + "*";
     tela.innerText = '';
 }
 
@@ -87,7 +91,7 @@ function divisao() {
     operacaoAtual.innerText = 'Divisão:';
     telaArmazenadores.innerText = ''
     armazenador += tela.innerText;
-    telaArmazenadores.innerText += armazenador;
+    telaArmazenadores.innerText += armazenador + "/";
     tela.innerText = '';
 }
 

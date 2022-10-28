@@ -7,7 +7,8 @@
     --vermelho: #B22222;
     --azul: #00BFFF;
     --roxo: #483248;
-    --amarelo: #FCF55F;
+    --amarelo: #FFEA00;
+    --amarelo-claro: #FCF55F;
 
     /*fontes*/
     --confortaa: 'Comfortaa', cursive;
@@ -47,10 +48,14 @@ body {
     border-radius: 2rem;
 
     padding: 2rem 1rem;
+
+    margin: 2rem 0;
 }
 
 .calculadora__tela__operacao {
     display: inline-block;
+
+    color: var(--amarelo);
 }
 
 .calculadora__tela__armazenadores {
@@ -122,7 +127,7 @@ body {
 .botao__corrigir {
     padding: 1rem 1.21rem;
 
-    background-color: var(--amarelo);
+    background-color: var(--amarelo-claro);
 }
 
 .botao__operador__adicao,
@@ -156,4 +161,12 @@ body {
     margin: 2rem 0;
 
     padding: 1rem;
+}
+
+.rodape__link-github {
+    text-decoration: none;
+}
+
+.rodape__link-github:hover {
+    color: var(--branco);
 }
